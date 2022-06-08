@@ -19,7 +19,7 @@ const Applications = (props) => {
   }, [props.search, props.applications]);
 
   return (
-    <div className="my-16">
+    <div>
       <h2>Applications</h2>
       {listedApplications.length > 0 ? (
         <ul className="my-8 flex flex-col flex-wrap gap-10 md:flex-row">
