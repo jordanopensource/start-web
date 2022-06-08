@@ -15,7 +15,8 @@ steps:
     image: plugins/docker
     settings:
       repo: josaorg/start-web
-      auto_tag: true
+      tag:
+        - latest
       username:
         from_secret: docker_username
       password:
