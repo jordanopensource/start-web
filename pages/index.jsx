@@ -9,7 +9,18 @@ import { getApplications } from '../lib/k8.js';
 import Bookmarks from '../components/Bookmarks';
 import bookmarks from '../data/bookmarks.json';
 
-export async function getServerSideProps() {
+export async function getServerSideProps({ req, res }) {
+  // This value is considered fresh for sixty seconds (s-maxage=59).
+  // If a request is repeated within the next 59 seconds, the previously
+  // cached value will still be fresh. If the request is repeated before 59 seconds,
+  // the cached value will be stale but still render (stale-while-revalidate=59).
+  //
+  // In the background, a revalidation request will be made to populate the cache
+  // with a fresh value. If you refresh the page, you will see the new value.
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=59, stale-while-revalidate=59'
+  );
   const applicationsRequest = await getApplications();
   const applicationsData = JSON.parse(applicationsRequest);
   return { props: { applications: applicationsData } };
@@ -20,11 +31,9 @@ const Home = ({ applications }) => {
   const [date, setDate] = useState(getDate());
   const [greeting, setGreeting] = useState(greeter());
 
-  const searchByName = (input) => setInputSearch(input);
-
   return (
     <div className="flex flex-col gap-y-8">
-      <Search searchByName={searchByName} />
+      <Search setInputSearch={setInputSearch} />
       <p>{date}</p>
       <h1 className="">{greeting}</h1>
       {applications.length > 0 && (
