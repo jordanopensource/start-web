@@ -5,7 +5,7 @@ type: kubernetes
 name: default
 
 metadata:
-  namespace: builds
+  namespace: josa-builds
 
 node_selector:
   doks.digitalocean.com/node-pool: josa-cloud-np
@@ -15,9 +15,7 @@ steps:
     image: plugins/docker
     settings:
       repo: josaorg/start-web
-      tags:
-        - ${DRONE_COMMIT_SHA}
-        - latest
+      auto_tag: true
       username:
         from_secret: docker_username
       password:
