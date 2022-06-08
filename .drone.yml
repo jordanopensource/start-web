@@ -16,8 +16,8 @@ steps:
     settings:
       repo: josaorg/start-web
       tags:
-        - ${DRONE_COMMIT_SHA}
         - latest
+        - ${DRONE_COMMIT_SHA}
       username:
         from_secret: docker_username
       password:
