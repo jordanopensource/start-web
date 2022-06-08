@@ -43,3 +43,16 @@ h2 {
   @apply outline-none;
   @apply border-sky-600;
 }
+
+.active {
+  @apply border-l-4 border-sky-500;
+}
+
+#settings-nav ul {
+  @apply flex flex-col gap-y-5;
+}
+
+#settings-nav li {
+  @apply pl-4;
+  @apply cursor-pointer;
+}
