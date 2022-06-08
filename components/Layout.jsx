@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Footer from './Footer';
 
 const Layout = (props) => {
   return (
@@ -20,7 +21,8 @@ const Layout = (props) => {
         />
         <meta name="robots" content="index, follow" />
       </Head>
-      <main className="container my-32">{props.children}</main>
+      <main className="full-height container my-32">{props.children}</main>
+      <Footer />
     </>
   );
 };

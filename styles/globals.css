@@ -43,3 +43,7 @@ h2 {
   @apply outline-none;
   @apply border-sky-600;
 }
+
+.full-height {
+  height: 70vh;
+}
