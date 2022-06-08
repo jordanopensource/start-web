@@ -71,18 +71,18 @@ export const Bookmarks = (props) => {
       <h2>Bookmarks</h2>
       {listedBookmarks.length > 0 ? (
         <ul className="my-8 flex flex-col flex-wrap gap-10 md:flex-row">
-          {listedBookmarks.map((app, index) => {
+          {listedBookmarks.map((item, index) => {
             return (
               <li key={index}>
                 <div>
                   <a
                     className="link"
                     target="_blank"
-                    href={app.url}
+                    href={item.url}
                     rel="noreferrer"
                   >
-                    <Icon icon={app.icon} />
-                    {app.name}
+                    <Icon icon={item.icon} />
+                    {item.name}
                   </a>
                 </div>
               </li>
