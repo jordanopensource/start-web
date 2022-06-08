@@ -25,6 +25,7 @@ const Search = (props) => {
   return (
     <div>
       <input
+        className="searchBar"
         type="text"
         name="name"
         id="search"

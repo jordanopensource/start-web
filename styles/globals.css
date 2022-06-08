@@ -26,8 +26,20 @@ h2 {
   @apply text-sky-800;
 }
 
-input[type='text'] {
+.searchBar {
+  @apply text-xl;
   @apply w-full;
   @apply my-8;
-  @apply text-xl;
+  @apply bg-transparent;
+  @apply border-b-2 border-sky-500;
+  /* @apply opacity-5; */
+  @apply transition-all duration-75;
+  /* color var(--color-primary*/
+  /* border-bottom: 2px solid var(--color-accent); */
+}
+
+.searchBar:focus {
+  @apply opacity-100;
+  @apply outline-none;
+  @apply border-sky-600;
 }
