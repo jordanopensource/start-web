@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  @apply h-1 w-1;
+  @apply h-1 w-2;
   @apply bg-transparent;
 }
 
