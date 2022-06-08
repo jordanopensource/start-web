@@ -12,13 +12,21 @@ const Footer = () => {
   }, [router]);
 
   return (
-    <footer className="container">
+    <footer className="container flex justify-between py-2">
       {showIcon && (
-        <Link href="/settings" passHref>
-          <div className="cursor-pointer">
-            <Icon icon="mdiCog" color="" />
+        <>
+          <Link href="/settings" passHref>
+            <div className="w-fit cursor-pointer">
+              <Icon icon="mdiCog" color="" />
+            </div>
+          </Link>
+          <div>
+            <span className="flex flex-row items-center">
+              <Icon icon="mdiCodeTags" /> with
+              <Icon icon="mdiRobotLove" /> by JOSA
+            </span>
           </div>
-        </Link>
+        </>
       )}
     </footer>
   );
