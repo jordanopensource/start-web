@@ -19,7 +19,7 @@ h2 {
 }
 
 .link {
-  @apply flex items-center font-semibold text-sky-600;
+  @apply flex cursor-pointer items-center font-semibold text-sky-600;
 }
 
 .link:hover {
