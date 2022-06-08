@@ -8,7 +8,7 @@ const Search = (props) => {
 
       if (key === 'Escape') {
         setVal('');
-        props.searchByName('');
+        props.setInputSearch('');
       }
     };
 
@@ -19,7 +19,7 @@ const Search = (props) => {
 
   const inputHandler = (e) => {
     setVal(e.target.value);
-    props.searchByName(e.target.value);
+    props.setInputSearch(e.target.value);
   };
 
   return (
