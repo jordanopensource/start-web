@@ -2,9 +2,8 @@ import { useState } from 'react';
 import { greeter } from '../utils/greeter';
 import { getDate } from '../utils/getDate';
 import { Applications, Bookmarks } from '../components/kubernetes/';
+import { getIngressAnnotations } from '../lib/k8.js';
 import Search from '../components/Layout/Search';
-import { getApplications } from '../lib/k8.js';
-import bookmarks from '../data/bookmarks.json';
 
 export async function getServerSideProps({ req, res }) {
   // This value is considered fresh for sixty seconds (s-maxage=59).
@@ -18,12 +17,15 @@ export async function getServerSideProps({ req, res }) {
     'Cache-Control',
     'public, s-maxage=59, stale-while-revalidate=59'
   );
-  const applicationsRequest = await getApplications();
-  const applicationsData = JSON.parse(applicationsRequest);
-  return { props: { applications: applicationsData } };
+  const request = await getIngressAnnotations();
+  const applicationsData = JSON.parse(request).applications;
+  const bookmarksData = JSON.parse(request).bookmarks;
+  return {
+    props: { applications: applicationsData, bookmarks: bookmarksData },
+  };
 }
 
-const Home = ({ applications }) => {
+const Home = ({ applications, bookmarks }) => {
   const [inputSearch, setInputSearch] = useState('');
   const [date, setDate] = useState(getDate());
   const [greeting, setGreeting] = useState(greeter());
