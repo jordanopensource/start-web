@@ -21,7 +21,7 @@ const Layout = (props) => {
         />
         <meta name="robots" content="index, follow" />
       </Head>
-      <main className="full-height container my-32">{props.children}</main>
+      <main className="container my-32">{props.children}</main>
       <Footer />
     </>
   );

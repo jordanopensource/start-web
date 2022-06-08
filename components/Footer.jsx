@@ -4,7 +4,7 @@ import Icon from '../components/Icon';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="container">
       <Link href="/settings" passHref>
         <div className="cursor-pointer">
           <Icon icon="mdiCog" color="" />

@@ -24,7 +24,7 @@ const Home = ({ applications }) => {
     <div>
       <Search searchByName={searchByName} />
       <p>{date}</p>
-      <h1 className="my-4 underline">{greeting}</h1>
+      <h1 className="my-8">{greeting}</h1>
 
       {applications.length > 0 && (
         <Applications applications={applications} search={inputSearch} />
