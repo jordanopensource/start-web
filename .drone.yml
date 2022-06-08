@@ -1,4 +1,4 @@
-# Drone CI File!
+# Drone Pipeline
 
 kind: pipeline
 type: kubernetes
