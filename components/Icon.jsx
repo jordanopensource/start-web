@@ -10,7 +10,7 @@ const Icon = (props) => {
 
   return (
     <MDIcon
-      className="mr-2 w-8"
+      className={`icon ${props.classes}`}
       path={iconPath}
       color={props.color ? props.color : 'black'}
     />
