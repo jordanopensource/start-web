@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import Head from 'next/head';
-import Image from 'next/image';
 import { greeter } from '../utils/greeter';
 import { getDate } from '../utils/getDate';
 import { Applications, Bookmarks } from '../components/kubernetes/';
