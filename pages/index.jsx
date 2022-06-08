@@ -6,6 +6,8 @@ import { getDate } from '../utils/getDate';
 import Applications from '../components/kubernetes/Applications';
 import Search from '../components/Layout/Search';
 import { getApplications } from '../lib/k8.js';
+import Bookmarks from '../components/Bookmarks';
+import bookmarks from '../data/bookmarks.json';
 
 export async function getServerSideProps() {
   const applicationsRequest = await getApplications();
@@ -21,13 +23,16 @@ const Home = ({ applications }) => {
   const searchByName = (input) => setInputSearch(input);
 
   return (
-    <div>
+    <div className="flex flex-col gap-y-8">
       <Search searchByName={searchByName} />
       <p>{date}</p>
-      <h1 className="my-8">{greeting}</h1>
-
+      <h1 className="">{greeting}</h1>
       {applications.length > 0 && (
         <Applications applications={applications} search={inputSearch} />
+      )}
+
+      {bookmarks.length > 0 && (
+        <Bookmarks bookmarks={bookmarks} search={inputSearch} />
       )}
     </div>
   );
