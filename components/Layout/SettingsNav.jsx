@@ -2,10 +2,10 @@ import React from 'react';
 
 const SettingsNav = (props) => {
   const listItems = [
-    {
-      name: 'Display Name',
-      id: 'display-name',
-    },
+    // {
+    //   name: 'Display Name',
+    //   id: 'display-name',
+    // },
     {
       name: 'Display Theme',
       id: 'display-theme',

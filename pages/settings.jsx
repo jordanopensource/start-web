@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import SettingsNav from '../components/Layout/SettingsNav';
-import DisplayName from '../components/AppConfig/DisplayName';
+// import DisplayName from '../components/AppConfig/DisplayName';
 import DisplayTheme from '../components/AppConfig/DisplayTheme';
 
 const Settings = () => {
-  const [active, setActive] = useState('display-name');
+  const [active, setActive] = useState('display-theme');
 
   return (
     <div className="my-8 flex gap-x-16">
@@ -29,8 +29,8 @@ export default Settings;
 
 const renderComponents = (active) => {
   switch (active) {
-    case 'display-name':
-      return <DisplayName />;
+    // case 'display-name':
+    //   return <DisplayName />;
     case 'display-theme':
       return <DisplayTheme />;
     default:
