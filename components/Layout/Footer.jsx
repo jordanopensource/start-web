@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Icon from '../components/Icon';
+import Icon from '../Icon';
 import { useRouter } from 'next/router';
 
 const Footer = () => {

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { greeter } from '../utils/greeter';
 import { getDate } from '../utils/getDate';
 import Applications from '../components/kubernetes/Applications';
-import Search from '../components/Search';
+import Search from '../components/Layout/Search';
 import { getApplications } from '../lib/k8.js';
 
 export async function getServerSideProps() {
