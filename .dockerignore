@@ -1,0 +1,32 @@
+# Git
+.git
+.gitignore
+.gitattributes
+.github
+
+# Docker
+Dockerfile
+docker-compose.yaml
+docker-compose.yml
+.dockerignore
+
+# Documentation
+*.md
+LICENSE
+
+# macOS (optional)
+.DS_Store
+
+# Visual Studio Code (optional)
+.vscode
+
+# Editor config
+.editorconfig
+.eslintrc.json
+.prettierrc
+
+# Drone
+.drone.yml
+
+# next build files
+.next
