@@ -38,7 +38,6 @@ const Home = ({ applications, bookmarks }) => {
       {applications.length > 0 && (
         <Applications applications={applications} search={inputSearch} />
       )}
-
       {bookmarks.length > 0 && (
         <Bookmarks bookmarks={bookmarks} search={inputSearch} />
       )}
