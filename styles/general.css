@@ -1,0 +1,22 @@
+/* Links */
+.link {
+  @apply flex cursor-pointer items-center font-semibold text-sky-600;
+}
+
+.link:hover {
+  @apply text-sky-800;
+}
+
+/* Active items */
+.active {
+  @apply border-l-4 border-sky-500;
+}
+
+/* Icons */
+
+.icon {
+  @apply mr-2 w-8;
+}
+.icon:hover {
+  @apply bg-opacity-90;
+}

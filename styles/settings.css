@@ -1,0 +1,8 @@
+#settings-nav ul {
+  @apply flex flex-col gap-y-5;
+}
+
+#settings-nav li {
+  @apply pl-4;
+  @apply cursor-pointer;
+}
