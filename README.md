@@ -1,23 +1,154 @@
-# Next.js + Tailwind CSS Example
+<!-- PROJECT LOGO -->
+<div align="center">
+<a href="https://github.com/jordanopensource/start-web">
+  <img src=".github/images/logo.svg" alt="Logo" width="80" height="80">
+</a>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-## Deploy your own
+### start-web
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Start-web is self-hosted startpage for our servers. Its design is inspired (heavily) by SUI and Flame.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+[Explore the docs »](https://github.com/jordanopensource/start-web)
 
-## How to use
+[Visit the Portal]()
+.
+[Report Bug](https://github.com/jordanopensource/start-web/issues)
+.
+[Request Feature](https://github.com/jordanopensource/start-web/issues)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+[![Build Status](https://builds.josa.dev/api/badges/jordanopensource/start-web/status.svg)](https://builds.josa.dev/jordanopensource/start-web)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#running">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+This is a Nuxtjs web client for the [JOSA Community Portal]().
+
+### Built With 🤖
+
+* [Nextjs](https://nextjs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+
+We recommend to look at the [documentation](https://nextjs.org/docs/getting-started).
+
+___
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+1. Download and install the latest version of Node.js from [here](https://nodejs.org/en/download/).
+
+### Installation
+
+1. Clone the repo
+
+   ```sh
+   git clone https://github.com/jordanopensource/start-web.git
+   ```
+
+2. Install NPM packages
+
+   ```sh
+   npm install
+   ```
+
+### Running
+
+#### Development
+
+To run the project locally for development purposes:
+
+1. Run the project
+
+```sh
+npm run dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+2. Go to `http://localhost:3000`
+
+#### Production
+
+To build and run the project locally for production purposes:
+
+1. Build the project
+
+```sh
+npm run build
+```
+
+2. Launch the production server
+
+```sh
+npm run start
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+
+___
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/jordanopensource/portal-web/issues) for a list of proposed features (and known issues).
+
+___
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+___
+
+<!-- LICENSE -->
+## License
+
+Distributed under the Apache License 2.0. See [LICENSE](LICENSE) for more information.
+
+___
+
+<!-- CONTACT -->
+## Contact
+
+Jordan Open Source Association - [@jo_osa](https://twitter.com/@jo_osa)
+
+Project Link: [https://github.com/jordanopensource/start-web](https://github.com/jordanopensource/start-web)
