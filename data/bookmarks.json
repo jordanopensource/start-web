@@ -1,0 +1,17 @@
+[
+  {
+    "name": "JOSA Twitter",
+    "link": "https://twitter.com/jo_osa/",
+    "icon": "mdiTwitter"
+  },
+  {
+    "name": "JOSA Instagram",
+    "link": "https://www.instagram.com/jordanopensource/",
+    "icon": "mdiInstagram"
+  },
+  {
+    "name": "JOSA Facebook",
+    "link": "https://www.facebook.com/jordanopensource/",
+    "icon": "mdiFacebook"
+  }
+]
