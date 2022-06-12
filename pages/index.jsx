@@ -35,10 +35,10 @@ const Home = ({ applications, bookmarks }) => {
       <Search setInputSearch={setInputSearch} />
       <p>{date}</p>
       <h1 className="">{greeting}</h1>
-      {applications.length > 0 && (
+      {applications && applications.length > 0 && (
         <Applications applications={applications} search={inputSearch} />
       )}
-      {bookmarks.length > 0 && (
+      {bookmarks && bookmarks.length > 0 && (
         <Bookmarks bookmarks={bookmarks} search={inputSearch} />
       )}
     </div>
