@@ -4,12 +4,12 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-bold;
+  @apply font-bold !important;
 }
 
 h1 {
-  @apply text-5xl;
+  @apply text-5xl !important;
 }
 h2 {
-  @apply text-xl;
+  @apply text-xl !important;
 }
