@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+
+  # Next Frontend
+  start-web:
+    container_name: start-web
+    image: josaorg/start-web:local
+    build:
+      context: .
+    ports:
+      - "3000:3000"
