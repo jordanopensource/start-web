@@ -1,22 +1,12 @@
-FROM node:16-alpine3.14
+FROM node:lts-alpine3.16
 
-# install node_modules
-COPY package*.json /tmp/
-RUN cd /tmp && npm install
-
-# copy application into image
 WORKDIR /srv/app
 COPY . .
+RUN npm install
 
-# move node_modules into application root
-RUN mv /tmp/node_modules .
-
-# declare environment variables
-ENV HOST    0.0.0.0
 ENV PORT 3000
-ENV BETA_RELEASE true
 
-# build NuxtJS project
+# build NextJs project
 RUN npm run build
 
 # run for production
