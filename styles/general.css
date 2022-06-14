@@ -1,3 +1,7 @@
+body {
+  background-color: #f6f6f6;
+}
+
 /* Links */
 .link {
   @apply flex cursor-pointer items-center font-semibold text-sky-600;
