@@ -7,7 +7,7 @@ const DisplayTheme = () => {
   const myContext = useAppContext();
   const themeNames = Object.keys(themeColors);
   const changeBackgroundColor = (colorName) => {
-    myContext.changeColorTheme(colorName);
+    myContext.changeColorTheme(colorName, true);
   };
 
   return (
