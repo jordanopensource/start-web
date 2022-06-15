@@ -7,6 +7,7 @@ const Footer = () => {
   const [credits, setCredits] = useState('JOSA');
   const [easter, setEaster] = useState(0);
   const [showIcon, setShowIcon] = useState(true);
+  const justifyContent = showIcon ? 'justify-between' : 'justify-end';
   const router = useRouter();
 
   useEffect(() => {
@@ -26,7 +27,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="container flex justify-between py-2">
+    <footer className={`container flex ${justifyContent} py-2`}>
       {showIcon && (
         <Link href="/settings" passHref>
           <div className="w-fit cursor-pointer">
