@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useAppContext } from '../context/state';
 import { getDate } from '../utils/getDate';
 
-const Clock = ({ h24 = true }) => {
+const Clock = () => {
+  const myContext = useAppContext();
+  const [h24, setH24] = useState(myContext.isMilitaryTime);
   const [hour, setHour] = useState(0);
   const [minute, setMinute] = useState(0);
   const [second, setSecond] = useState(0);
@@ -15,6 +18,7 @@ const Clock = ({ h24 = true }) => {
       if (!h24) {
         hour = hour % 12 || 12;
       }
+      setH24(myContext.isMilitaryTime);
       setHour(hour);
       setMinute(date.getMinutes());
       setSecond(date.getSeconds());
