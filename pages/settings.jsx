@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import SettingsNav from '../components/Layout/SettingsNav';
-// import DisplayName from '../components/AppConfig/DisplayName';
+import DisplayClock from '../components/AppConfig/DisplayClock';
 import DisplayTheme from '../components/AppConfig/DisplayTheme';
 
 const Settings = () => {
@@ -29,8 +29,8 @@ export default Settings;
 
 const renderComponents = (active) => {
   switch (active) {
-    // case 'display-name':
-    //   return <DisplayName />;
+    case 'display-clock':
+      return <DisplayClock />;
     case 'display-theme':
       return <DisplayTheme />;
     default:
