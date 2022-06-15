@@ -6,14 +6,9 @@
   @apply border-b-2;
   @apply transition-all duration-75;
   border-color: var(--accent-color);
-  /* @apply opacity-5; */
-  /* color var(--color-primary*/
-  /* border-bottom: 2px solid var(--color-accent); */
 }
 
 .searchBar:focus {
-  @apply opacity-100;
-  @apply outline-none;
-  @apply border-sky-600;
+  @apply outline-0;
   border-color: var(--accent-color-hover);
 }
