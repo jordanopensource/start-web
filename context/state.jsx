@@ -5,6 +5,7 @@ const AppContext = createContext();
 
 export function AppWrapper({ children }) {
   const [currentTheme, setCurrentTheme] = useState('');
+  const [isMilitaryTime, setIsMilitaryTime] = useState(false);
 
   const getTheme = () => {
     if (localStorage.getItem('theme-name')) {
@@ -28,13 +29,29 @@ export function AppWrapper({ children }) {
     }
   };
 
+  const getTimeFormat = () => {
+    if (localStorage.getItem('military-time')) {
+      const localStorageValue =
+        localStorage.getItem('military-time') === 'true' ? true : false;
+      setIsMilitaryTime(localStorageValue);
+    }
+  };
+
+  const toggleMilitaryTime = () => {
+    setIsMilitaryTime(isMilitaryTime ? false : true);
+    localStorage.setItem('military-time', isMilitaryTime ? false : true);
+  };
+
   let sharedState = {
     changeColorTheme,
     currentTheme,
+    isMilitaryTime,
+    toggleMilitaryTime,
   };
 
   useEffect(() => {
     getTheme();
+    getTimeFormat();
   }, []);
 
   return (
