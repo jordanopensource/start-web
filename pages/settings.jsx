@@ -18,7 +18,7 @@ const Settings = () => {
         </div>
         <SettingsNav activeName={active} changeActive={setActive} />
       </div>
-      <div id="display-config" className="mt-20">
+      <div id="display-config" className="mt-20 w-full">
         {renderComponents(active)}
       </div>
     </div>

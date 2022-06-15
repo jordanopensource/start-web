@@ -7,7 +7,7 @@ function DisplayClock() {
   return (
     <div className="container flex flex-col gap-y-8">
       <h2>Change Clock Setting</h2>
-      <div className="flex flex-row items-center">
+      <div className=":items-center flex flex-col gap-y-8   lg:flex-row">
         <span className="mr-8">Toggle 24 hour mode</span>{' '}
         <Toggle
           isChecked={myContext.isMilitaryTime}
