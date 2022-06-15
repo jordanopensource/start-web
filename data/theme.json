@@ -1,0 +1,38 @@
+{
+  "josa-light": {
+    "--main-bg-color": "#f6f6f6",
+    "--main-color": "#000000",
+    "--accent-color": "#0ea5e9",
+    "--accent-color-hover": "#0284c7"
+  },
+  "josa-dark": {
+    "--main-bg-color": "#2e3436",
+    "--main-color": "#ffffff",
+    "--accent-color": "#0ea5e9",
+    "--accent-color-hover": "#25b6f7"
+  },
+  "josa-light-green": {
+    "--main-bg-color": "#f6f6f6",
+    "--main-color": "#000000",
+    "--accent-color": "#00b199",
+    "--accent-color-hover": "#01917e"
+  },
+  "josa-dark-green": {
+    "--main-bg-color": "#2e3436",
+    "--main-color": "#ffffff",
+    "--accent-color": "#00b199",
+    "--accent-color-hover": "#02d9bc"
+  },
+  "josa-light-orange": {
+    "--main-bg-color": "#f6f6f6",
+    "--main-color": "#000000",
+    "--accent-color": "#dd4814",
+    "--accent-color-hover": "#cc3e0c"
+  },
+  "josa-dark-orange": {
+    "--main-bg-color": "#2e3436",
+    "--main-color": "#ffffff",
+    "--accent-color": "#dd4814",
+    "--accent-color-hover": "#f2521b"
+  }
+}
