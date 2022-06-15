@@ -21,8 +21,10 @@ const Layout = (props) => {
         />
         <meta name="robots" content="index, follow" />
       </Head>
-      <main className="container my-20 h-screen">{props.children}</main>
-      <Footer />
+      <div className="flex h-screen flex-col">
+        <main className="container my-20 flex flex-1">{props.children}</main>
+        <Footer />
+      </div>
     </>
   );
 };
