@@ -3,9 +3,10 @@
   @apply w-full;
   @apply my-8;
   @apply bg-transparent;
-  @apply border-b-2 border-sky-500;
-  /* @apply opacity-5; */
+  @apply border-b-2;
   @apply transition-all duration-75;
+  border-color: var(--accent-color);
+  /* @apply opacity-5; */
   /* color var(--color-primary*/
   /* border-bottom: 2px solid var(--color-accent); */
 }
@@ -14,4 +15,5 @@
   @apply opacity-100;
   @apply outline-none;
   @apply border-sky-600;
+  border-color: var(--accent-color-hover);
 }

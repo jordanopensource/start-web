@@ -1,19 +1,21 @@
 body {
-  background-color: #f6f6f6;
+  background-color: var(--main-bg-color);
 }
 
 /* Links */
 .link {
-  @apply flex cursor-pointer items-center font-semibold text-sky-600;
+  @apply flex cursor-pointer items-center font-semibold;
+  color: var(--accent-color);
 }
 
 .link:hover {
-  @apply text-sky-800;
+  color: var(--accent-color-hover);
 }
 
 /* Active items */
 .active {
-  @apply border-l-4 border-sky-500;
+  @apply border-l-4;
+  border-color: var(--accent-color);
 }
 
 /* Icons */

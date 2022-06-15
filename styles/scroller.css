@@ -6,6 +6,6 @@
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:active {
-  @apply bg-sky-600;
   @apply border-2;
+  background-color: var(--accent-color);
 }
