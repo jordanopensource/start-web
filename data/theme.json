@@ -64,5 +64,11 @@
     "--main-color": "#00eb00",
     "--accent-color": "#00eb00",
     "--accent-color-hover": "blue"
+  },
+  "ubuntu": {
+    "--main-bg-color": "#333333",
+    "--main-color": "#925375",
+    "--accent-color": "#E95420",
+    "--accent-color-hover": "#925375"
   }
 }
