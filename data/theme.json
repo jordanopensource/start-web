@@ -23,16 +23,40 @@
     "--accent-color": "#00b199",
     "--accent-color-hover": "#02d9bc"
   },
+  "josa-light-red": {
+    "--main-bg-color": "#f6f6f6",
+    "--main-color": "#000000",
+    "--accent-color": "#db1414",
+    "--accent-color-hover": "#bf0606"
+  },
+  "josa-dark-red": {
+    "--main-bg-color": "#2e3436",
+    "--main-color": "#ffffff",
+    "--accent-color": "#db1414",
+    "--accent-color-hover": "#de4747"
+  },
   "josa-light-orange": {
     "--main-bg-color": "#f6f6f6",
     "--main-color": "#000000",
-    "--accent-color": "#dd4814",
-    "--accent-color-hover": "#cc3e0c"
+    "--accent-color": "#fd7d00",
+    "--accent-color-hover": "#e37102"
   },
   "josa-dark-orange": {
     "--main-bg-color": "#2e3436",
     "--main-color": "#ffffff",
-    "--accent-color": "#dd4814",
-    "--accent-color-hover": "#f2521b"
+    "--accent-color": "#fd7d00",
+    "--accent-color-hover": "#ffa64f"
+  },
+  "josa-light-purple": {
+    "--main-bg-color": "#f6f6f6",
+    "--main-color": "#000000",
+    "--accent-color": "#ba0ee9",
+    "--accent-color-hover": "#8d04b3"
+  },
+  "josa-dark-purple": {
+    "--main-bg-color": "#2e3436",
+    "--main-color": "#ffffff",
+    "--accent-color": "#ba0ee9",
+    "--accent-color-hover": "#c16cd9"
   }
 }
