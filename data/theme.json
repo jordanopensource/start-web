@@ -58,5 +58,11 @@
     "--main-color": "#ffffff",
     "--accent-color": "#ba0ee9",
     "--accent-color-hover": "#c16cd9"
+  },
+  "terminal": {
+    "--main-bg-color": "#000000",
+    "--main-color": "#00eb00",
+    "--accent-color": "#00eb00",
+    "--accent-color-hover": "blue"
   }
 }
