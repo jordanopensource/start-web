@@ -3,12 +3,12 @@ import React from 'react';
 const SettingsNav = (props) => {
   const listItems = [
     {
-      name: 'Display Theme',
-      id: 'display-theme',
+      name: 'Theme',
+      id: 'theme',
     },
     {
-      name: 'Clock Settings',
-      id: 'display-clock',
+      name: 'Dashboard',
+      id: 'dashboard',
     },
   ];
   return (
