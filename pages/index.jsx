@@ -3,6 +3,7 @@ import { getIngressAnnotations } from '../lib/k8.js';
 import { Applications, Bookmarks } from '../components/kubernetes/';
 import Search from '../components/Layout/Search';
 import Clock from '../components/Clock';
+import FullDate from '../components/FullDate';
 import Greeter from '../components/Greeter';
 
 export async function getServerSideProps({ req, res }) {
@@ -31,7 +32,11 @@ const Home = ({ applications, bookmarks }) => {
   return (
     <div className="flex flex-col gap-y-8">
       <Search setInputSearch={setInputSearch} />
-      <Clock />
+      <div className="flex flex-col gap-4 md:flex-row">
+        <FullDate />
+        <div className="separator-line border-b-2 md:border-r-2 md:border-b-0"></div>
+        <Clock />
+      </div>
       <Greeter />
       {applications && applications.length > 0 && (
         <Applications applications={applications} search={inputSearch} />

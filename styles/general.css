@@ -26,3 +26,9 @@ body {
 .icon:hover {
   @apply bg-opacity-90;
 }
+
+/* separators */
+
+.separator-line {
+  border-color: var(--accent-color);
+}

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useAppContext } from '../context/state';
-import { getDate } from '../utils/getDate';
 
 const Clock = () => {
   const myContext = useAppContext();
@@ -9,7 +8,6 @@ const Clock = () => {
   const [minute, setMinute] = useState(0);
   const [second, setSecond] = useState(0);
   const [pm, setPm] = useState(false);
-  const [date, setDate] = useState(getDate());
 
   useEffect(() => {
     const update = () => {
@@ -36,7 +34,7 @@ const Clock = () => {
 
   return (
     <div className="text-xl">
-      {date} - {hour}:{minute}:{second} {!h24 ? (pm ? 'PM' : 'AM') : ''}
+      {hour}:{minute}:{second} {!h24 ? (pm ? 'PM' : 'AM') : ''}
     </div>
   );
 };
