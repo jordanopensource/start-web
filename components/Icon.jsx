@@ -1,13 +1,13 @@
 import React from 'react';
 import { Icon as MDIcon } from '@mdi/react';
-import { useAppContext } from '../context/state';
+import { useThemeContext } from '../context/theme';
 
 const Icon = (props) => {
   const MDIcons = require('@mdi/js');
-  const myContext = useAppContext();
+  const themeContext = useThemeContext();
   let iconPath = MDIcons[props.icon] ? MDIcons[props.icon] : MDIcons.mdiCancel;
-  let iconColor = myContext.currentTheme['--main-color']
-    ? myContext.currentTheme['--main-color']
+  let iconColor = themeContext.currentTheme['--main-color']
+    ? themeContext.currentTheme['--main-color']
     : 'black';
 
   return (

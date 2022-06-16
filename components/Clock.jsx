@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useAppContext } from '../context/state';
+import { useDashboardContext } from '../context/dashboard';
 
 const Clock = () => {
-  const myContext = useAppContext();
-  const [h24, setH24] = useState(myContext.isMilitaryTime);
+  const dashboardContext = useDashboardContext();
+  const [h24, setH24] = useState(dashboardContext.isMilitaryTime);
   const [hour, setHour] = useState(0);
   const [minute, setMinute] = useState(0);
   const [second, setSecond] = useState(0);
@@ -16,7 +16,7 @@ const Clock = () => {
       if (!h24) {
         hour = hour % 12 || 12;
       }
-      setH24(myContext.isMilitaryTime);
+      setH24(dashboardContext.isMilitaryTime);
       setHour(hour);
       setMinute(date.getMinutes());
       setSecond(date.getSeconds());

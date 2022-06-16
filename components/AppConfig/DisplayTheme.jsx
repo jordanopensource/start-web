@@ -1,13 +1,13 @@
 import React from 'react';
-import { useAppContext } from '../../context/state';
+import { useThemeContext } from '../../context/theme';
 import Theme from './Theme';
 import themeColors from '../../data/theme.json';
 
 const DisplayTheme = () => {
-  const myContext = useAppContext();
+  const themeContext = useThemeContext();
   const themeNames = Object.keys(themeColors);
   const changeBackgroundColor = (colorName) => {
-    myContext.changeColorTheme(colorName, true);
+    themeContext.changeColorTheme(colorName, true);
   };
 
   return (
