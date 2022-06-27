@@ -1,8 +1,12 @@
 FROM node:lts-alpine3.16
 
-WORKDIR /srv/app
+COPY package*.json /tmp/
+RUN cd /tmp && npm install
+
+WORKDIR /app
 COPY . .
-RUN npm install
+
+RUN mv /tmp/node_modules ./
 
 ENV PORT 3000
 
