@@ -6,7 +6,7 @@ RUN cd /tmp && npm install
 WORKDIR /app
 COPY . .
 
-RUN mv /tmp/node_modules ./
+RUN mv /tmp/node_modules .
 
 ENV PORT 3000
 
