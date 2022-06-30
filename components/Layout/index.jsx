@@ -22,7 +22,9 @@ const Layout = (props) => {
         <meta name="robots" content="index, follow" />
       </Head>
       <div className="flex h-screen flex-col">
-        <main className="container my-20 flex flex-1">{props.children}</main>
+        <main className="container my-20  flex-grow basis-0">
+          {props.children}
+        </main>
         <Footer />
       </div>
     </>
