@@ -91,7 +91,7 @@ export const Bookmarks = (props) => {
         </ul>
       ) : (
         <div>
-          <p>No Apps were found!</p>
+          <p>No Bookmarks were found!</p>
         </div>
       )}
     </div>
