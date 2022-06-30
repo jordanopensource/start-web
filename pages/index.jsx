@@ -19,8 +19,14 @@ export async function getServerSideProps({ req, res }) {
     'public, s-maxage=59, stale-while-revalidate=59'
   );
   const request = await getIngressAnnotations();
-  const applicationsData = JSON.parse(request).applications;
-  const bookmarksData = JSON.parse(request).bookmarks;
+  let applicationsData = null;
+  let bookmarksData = null;
+  if (JSON.parse(request).applications) {
+    applicationsData = JSON.parse(request).applications;
+  }
+  if (JSON.parse(request).bookmarks) {
+    bookmarksData = JSON.parse(request).bookmarks;
+  }
   return {
     props: { applications: applicationsData, bookmarks: bookmarksData },
   };
@@ -38,11 +44,19 @@ const Home = ({ applications, bookmarks }) => {
         <Clock />
       </div>
       <Greeter />
-      {applications && applications.length > 0 && (
+      {applications && applications.length > 0 ? (
         <Applications applications={applications} search={inputSearch} />
+      ) : (
+        <div>
+          <p>No Apps were found!</p>
+        </div>
       )}
-      {bookmarks && bookmarks.length > 0 && (
+      {bookmarks && bookmarks.length > 0 ? (
         <Bookmarks bookmarks={bookmarks} search={inputSearch} />
+      ) : (
+        <div>
+          <p>No Bookmarks were found!</p>
+        </div>
       )}
     </div>
   );
