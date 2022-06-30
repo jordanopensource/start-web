@@ -1,4 +1,4 @@
-# Drone Pipeline
+# Drone Pipline
 
 kind: pipeline
 type: kubernetes
@@ -15,9 +15,9 @@ steps:
     image: plugins/docker
     settings:
       repo: josaorg/start-web
-      tags:
-        - latest
+      tag:
         - ${DRONE_COMMIT_SHA}
+        - stable
       username:
         from_secret: docker_username
       password:
