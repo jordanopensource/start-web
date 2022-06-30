@@ -27,7 +27,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className={`container flex ${justifyContent} py-2`}>
+    <footer className={`container flex ${justifyContent} py-2 pb-6`}>
       {showIcon && (
         <Link href="/settings" passHref>
           <div className="w-fit cursor-pointer">
