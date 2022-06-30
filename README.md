@@ -17,7 +17,7 @@ Start-web is self-hosted startpage for our servers. Its design is inspired (heav
 .
 [Request Feature](https://github.com/jordanopensource/start-web/issues)
 
-[![Build Status](https://builds.josa.dev/api/badges/jordanopensource/start-web/status.svg)](https://builds.josa.dev/jordanopensource/start-web)
+[![Build Status](https://builds.josa.dev/api/badges/jordanopensource/start-web/status.svg?ref=refs/heads/development)](https://builds.josa.dev/jordanopensource/start-web)
 
 </div>
 

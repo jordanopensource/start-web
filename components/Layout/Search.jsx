@@ -24,15 +24,17 @@ const Search = (props) => {
 
   return (
     <div>
-      <input
-        className="searchBar"
-        type="text"
-        name="name"
-        id="search"
-        placeholder="Search By Name"
-        value={val}
-        onChange={(e) => inputHandler(e)}
-      />
+      <form autoComplete="off">
+        <input
+          className="searchBar"
+          type="text"
+          name="name"
+          id="search"
+          placeholder="Search By Name"
+          value={val}
+          onChange={(e) => inputHandler(e)}
+        />
+      </form>
     </div>
   );
 };

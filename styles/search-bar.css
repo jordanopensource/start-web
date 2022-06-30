@@ -1,0 +1,14 @@
+.searchBar {
+  @apply text-xl;
+  @apply w-full;
+  @apply my-8;
+  @apply bg-transparent;
+  @apply border-b-2;
+  @apply transition-all duration-75;
+  border-color: var(--accent-color);
+}
+
+.searchBar:focus {
+  @apply outline-0;
+  border-color: var(--accent-color-hover);
+}

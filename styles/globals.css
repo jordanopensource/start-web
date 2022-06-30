@@ -1,59 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('./colors.css');
 @import url('./scroller.css');
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply font-bold;
-}
-
-h1 {
-  @apply text-5xl;
-}
-h2 {
-  @apply text-xl;
-}
-
-.link {
-  @apply flex cursor-pointer items-center font-semibold text-sky-600;
-}
-
-.link:hover {
-  @apply text-sky-800;
-}
-
-.searchBar {
-  @apply text-xl;
-  @apply w-full;
-  @apply my-8;
-  @apply bg-transparent;
-  @apply border-b-2 border-sky-500;
-  /* @apply opacity-5; */
-  @apply transition-all duration-75;
-  /* color var(--color-primary*/
-  /* border-bottom: 2px solid var(--color-accent); */
-}
-
-.searchBar:focus {
-  @apply opacity-100;
-  @apply outline-none;
-  @apply border-sky-600;
-}
-
-.active {
-  @apply border-l-4 border-sky-500;
-}
-
-#settings-nav ul {
-  @apply flex flex-col gap-y-5;
-}
-
-#settings-nav li {
-  @apply pl-4;
-  @apply cursor-pointer;
-}
+@import url('./typography.css');
+@import url('./search-bar.css');
+@import url('./settings.css');
+@import url('./general.css');
+@import url('./toggle.css');

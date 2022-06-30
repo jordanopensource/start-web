@@ -1,11 +1,11 @@
 ::-webkit-scrollbar {
-  @apply h-1 w-1;
+  @apply h-1 w-2;
   @apply bg-transparent;
 }
 
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:active {
-  @apply bg-sky-600;
   @apply border-2;
+  background-color: var(--accent-color);
 }
