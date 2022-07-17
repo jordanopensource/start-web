@@ -1,17 +1,17 @@
 {
   "bookmarks": [
     {
-      "name": "JOSA Twitter",
+      "name": "Twitter",
       "url": "https://twitter.com/jo_osa/",
       "icon": "mdiTwitter"
     },
     {
-      "name": "JOSA Instagram",
+      "name": "Instagram",
       "url": "https://www.instagram.com/jordanopensource/",
       "icon": "mdiInstagram"
     },
     {
-      "name": "JOSA Facebook",
+      "name": "Facebook",
       "url": "https://www.facebook.com/jordanopensource/",
       "icon": "mdiFacebook"
     }
